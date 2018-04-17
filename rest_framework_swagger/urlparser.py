@@ -129,7 +129,6 @@ class UrlParser(object):
         path = re.sub('\(P', '', path)
         path = re.sub('}.*\)\/', '}}/', path)
         path = re.sub('}.*\)', '}', path)
-        print path
         path = self.__make_relative__(path)
 
         if self.__exclude_format_endpoints__(path):
